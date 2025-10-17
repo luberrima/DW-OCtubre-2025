@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk";
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    padding: 20px 0 1px 0;
+    text-align: center;
+    background-color: rgb(24, 24, 24);
+}
+
+header h1 {
+    color: fuchsia;
+}
+
+nav {
+    margin: 10px 0 0 0;
+    border-top: 1px solid white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    color: fuchsia;
+    font-style: oblique;
+}
+
+main {
+    min-height: calc(100vh - (113.4px + 40.8px));
+}
+
+#inicio {
+    height: 85vh;
+    background-image: url(../img/home.avif);
+}
+
+#inicio div {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(24, 24, 24, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 50px;
+    color: white;
+}
+
+#portfolio {
+    padding: 50px;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+
+}
+
+.galeria div {
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgb(24, 24, 24);
+    background-size: cover;
+    background-position: center;
+}
+
+.galeria div:first-child {
+    background-image: url(../img/galeria1.webp);
+}
+
+.galeria div:nth-child(2) {
+    background-image: url(../img/galeria2.png);
+}
+
+.galeria div:nth-child(3) {
+    background-image: url(../img/galeria3.jpg);
+}
+
+.galeria div:nth-child(4) {
+    background-image: url(../img/galeria4.jpg);
+}
+
+.galeria div:nth-child(5) {
+    background-image: url(../img/galeria5.jpg);
+}
+
+
+footer {
+    background-color: rgb(24, 24, 24);
+    padding: 10px;
+    text-align: center;
+    color: white;
+}

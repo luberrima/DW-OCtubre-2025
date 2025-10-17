@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.padre {
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    padding: auto;
+}
+
+.hijo {
+    width: 50%;
+    height: 50%;
+    background-color: lightslategray;
+    margin: 25% auto;
+}
+
+.border1 {
+    border: 15px solid pink;
+}
+
+.border2 {
+    border: 15px dotted pink;
+}
+
+.border3 {
+    border: 12px dashed pink;
+}
+
+.border4 {
+    border: 12px double pink;
+}
+
+.border5 {
+    border: 12px groove pink;
+}
+
+.border6 {
+    border-width: 5px;
+    border-style: dashed groove dotted solid;
+    border-color: pink;
+    border-radius: 10px 20px;
+}

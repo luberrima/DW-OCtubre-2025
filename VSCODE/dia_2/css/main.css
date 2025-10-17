@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope";
+}
+
+body {
+    background-color: rgb(30, 30, 30);
+
+}
+
+header {
+    padding: 50px;
+    background-color: white;
+}
+
+header h1,
+header p {
+    color: rgb(30, 30, 30);
+}
+
+main {
+    padding: 0 50px;
+}
+
+section {
+    /* border: 1px solid white; */
+    padding: 20px;
+    margin: 20px 0;
+}
+
+article {
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+img {
+    width: 50%;
+    height: auto;
+}
+
+.galeria {
+    flex-direction: row;
+}
+
+.galeria img {
+    width: 100%;
+}
+
+
+div {
+    margin: 20px 0 0 20px;
+    padding: 10px 0 0 10px;
+    border-left: 3px solid pink;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Unbounded";
+    color: white;
+    font-weight: light;
+}
+
+
+p,
+figcaption {
+    color: white;
+    font-size: 1rem;
+}
+
+ul {
+    padding: 20px;
+    color: white;
+}
+
+span {
+    color: pink;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 3px solid pink;
+    color: white;
+    width: 80%;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th {
+    background-color: pink;
+    font-family: "Unbounded";
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+td {
+    font-size: 1.1rem;
+}
+
+tr:nth-child(even) td {
+    background-color: lightpink
+}
+
+tr:hover td {
+    background-color: fuchsia;
+    color: black;
+    font-style: oblique;
+}
