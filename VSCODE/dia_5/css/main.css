@@ -1,0 +1,172 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk";
+}
+
+/* ELEMENTOS QUE SE REPITEN */
+a {
+    color: #13100d;
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-style: italic;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* HEADER Y FOOTER */
+header {
+    height: 100px;
+    background-color: #ff00ce;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 1rem;
+}
+
+header img {
+    height: 30px;
+}
+
+footer {
+    height: 75px;
+    background-color: #ff00ce;
+    color: #13100d;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+li {
+    padding: 0 10px;
+}
+
+.insta {
+    text-transform: uppercase;
+}
+
+.linkedin {
+    font-weight: bold;
+}
+
+.email {
+    font-style: oblique;
+}
+
+.tlf {
+    font-size: 20px;
+}
+
+/* MAIN */
+main {
+    min-height: calc(100vh - 175px);
+    padding: 50px;
+    background-color: #13100d;
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+}
+
+main>section {
+max-width: 80vw;
+display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.galeria {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 2rem;
+
+}
+
+.galeria div {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ff00ce;
+    background-size: cover;
+    background-position: center;
+}
+
+.galeria div:first-child {
+    background-image: url(../img/galeria1.webp);
+}
+
+.galeria div:nth-child(2) {
+    background-image: url(../img/galeria2.png);
+}
+
+.galeria div:nth-child(3) {
+    background-image: url(../img/galeria3.jpg);
+}
+
+.galeria div:nth-child(4) {
+    background-image: url(../img/galeria4.jpg);
+}
+
+.galeria div:nth-child(5) {
+    background-image: url(../img/galeria5.jpg);
+}
+
+/* RESPONSIVE */
+@media (max-width: 500px) {
+    main {
+        background-color: white;
+        color: #13100d;
+    }
+    p {
+            font-size: 16px;
+            text-align: justify;
+        }
+    
+        header {
+           height: 150px;
+            padding: 15px;
+            gap: 0.8rem;
+        }
+    
+    
+        ul {
+            flex-direction: column;
+        }
+    
+        main {
+            min-height: calc(100vh - 250px);
+        }
+    
+        .galeria div {
+            width: 150px;
+            height: 150px;
+        }
+    
+        footer {
+            height: 100px;
+        }
+}
