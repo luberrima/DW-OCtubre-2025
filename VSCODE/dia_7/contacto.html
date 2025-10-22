@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lubérrima | Contacto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="img/icon.svg">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <a href="#"><img src="img/logo.svg" alt="Lubérrima" title="Logo de la página"></a>
+        <nav>
+            <ul>
+                <li><a href="./index.html" title="Galería">Galería</a></li>
+                <li><a href="./sobre-mi.html" title="Sobre Mí">Sobre Mí</a></li>
+                <li><a href="./portfolio.html" title="Portfolio">Portfolio</a></li>
+                <li><a class="active" href="#" title="Contacto">Contacto</a></li>
+                <li><a href="./presentacion.html" title="Presentación">Presentación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Contacto</h1>
+        <p>Si quieres hablar o preguntar algo, mándame un mensaje a través de este formulario.</p>
+
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li class="insta"><a href="#" title="Enlace a Instagram" target="_blank"
+                        rel="noopener noreferrer">Instagram</a></li>
+                <li class="linkedin"><a href="#" title="Enlace a Linkedin" target="_blank"
+                        rel="noopener noreferrer">Linkedin</a></li>
+                <li class="email"><a href="#" title="Enlace al Email" target="_blank"
+                        rel="noopener noreferrer">Email</a></li>
+                <li class="tlf"><a href="#" title="Enlace al Teléfono" target="_blank"
+                        rel="noopener noreferrer">Teléfono</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
