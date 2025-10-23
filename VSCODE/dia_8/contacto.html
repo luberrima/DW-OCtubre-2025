@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lubérrima | Contacto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="img/icon.svg">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <a href="#"><img src="img/logo.svg" alt="Lubérrima" title="Logo de la página"></a>
+        <nav>
+            <ul>
+                <li><a href="./index.html" title="Galería">Galería</a></li>
+                <li><a href="./sobre-mi.html" title="Sobre Mí">Sobre Mí</a></li>
+                <li><a href="./portfolio.html" title="Portfolio">Portfolio</a></li>
+                <li><a class="nav__item--active" href="#" title="Contacto">Contacto</a></li>
+                <li><a href="./presentacion.html" title="Presentación">Presentación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Contacto</h1>
+        <p>Si quieres hablar o preguntar algo, mándame un mensaje a través de este formulario.</p>
+
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div class="contact__divider"></div>
+
+        <section class="contact__ubi">
+            <h2>Si no te contesto me puedes encontrar aquí</h2>
+            <p>Si no estoy en el ordenador probablemente esté tomándome una cervecita aquí :)</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5362.942946444189!2d-5.9942240832318205!3d37.3904453092996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126d007c581d05%3A0x45d2754b0ed53282!2sBodega%20Los%20Amigos!5e0!3m2!1ses!2ses!4v1761236610250!5m2!1ses!2ses"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li class="footer__item--insta"><a href="#" title="Enlace a Instagram" target="_blank"
+                        rel="noopener noreferrer">Instagram</a></li>
+                <li class="footer__item--linkedin"><a href="#" title="Enlace a Linkedin" target="_blank"
+                        rel="noopener noreferrer">Linkedin</a></li>
+                <li class="footer__item--email"><a href="#" title="Enlace al Email" target="_blank"
+                        rel="noopener noreferrer">Email</a></li>
+                <li class="footer__item--tlf"><a href="#" title="Enlace al Teléfono" target="_blank"
+                        rel="noopener noreferrer">Teléfono</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

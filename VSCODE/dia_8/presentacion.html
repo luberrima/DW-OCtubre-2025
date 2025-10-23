@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lubérrima | Presentación</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="img/icon.svg">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <a href="#"><img src="img/logo.svg" alt="Lubérrima" title="Logo de la página"></a>
+        <nav>
+            <ul>
+                <li><a href="./index.html" title="Galería">Galería</a></li>
+                <li><a href="./sobre-mi.html" title="Sobre Mí">Sobre Mí</a></li>
+                <li><a href="./portfolio.html" title="Portfolio">Portfolio</a></li>
+                <li><a href="./contacto.html" title="Contacto">Contacto</a></li>
+                <li><a class="nav__item--active" href="#" title="Presentación">Presentación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Presentación de mi web</h1>
+        <p>Esta web es una exploración personal del diseño gráfico y el desarrollo front-end. Combina la parte
+            más
+            visual de mi personalidad con la estructura técnica de una web funcional. El objetivo de esta web es
+            mostrar un estilo coherente y experimental al mismo tiempo que refinamos nuestras habilidades con el
+            código ♥
+        </p>
+
+        <section>
+            <h2>Páginas de la web</h2>
+            <details>
+                <summary>Galería (Inicio)</summary>
+                <p>Una pequeña introducción visual que marca el tono del proyecto. En esta sección se explica el poder de las referencias visuales y se muestran algunos ejemplos de referencias del Diseño Gráfico que han influido en el trabajo de Lubérrima (y en el de otros muchos diseñadores gráficos del mundo).</p>
+            </details>
+            <details>
+                <summary>Sobre Mí</summary>
+                <p>Una presentación más personal donde se explica el enfoque creativo de Lubérrima. En ella se habla de su filosofía felina, de su manera de observar el entorno para construir propuestas visuales ricas. También se muestra otra pequeña galería de inspiración visual. No es repetitivo, ¡es que la inspiración lo es todo, hay que reiterarlo!</p>
+            </details>
+            <details>
+                <summary>Portfolio</summary>
+                <p>Una galería de trabajos que recopila piezas y referencias representativas.
+                </p>
+            </details>
+            <details>
+                <summary>Contacto</summary>
+                <p>Una sección a la que acudir si hay algo que te inquieta, te atormenta o te perturba. Rellenas el formulario y de 1 a 100 días laborables te responderá el departamento de comunicaciones esotéricas.
+                </p>
+            </details>
+
+
+        </section>
+
+        <section>
+            <h2>Aspectos visuales</h2>
+            <p>El diseño parte del branding de Lubérrima, que es mi marca personal. Lubérrima es, como su nombre bien dice, <strong>La más Lube</strong>. Lubérrima utiliza 3 colores: negro (#13100d) y blanco (#fff), los dos extremos del espectro cromático, la ausencia y la saturación, la vida y la miuerte; además de un rosa fuchsia estridente (#13100d) como la vida misma. El rosa fuchsia es muy Lubérrima: se hace notar. La tipografía <em>Space
+                    Grotesk</em> aporta un carácter técnico y contemporáneo. La estructura es clara, basada en
+                bloques con
+                aire visual y un ritmo constante entre texto e imagen.</p>
+        </section>
+
+        <section class="documentacion">
+            <h2>Documentación del código</h2>
+            <p>La web está organizada de forma modular para facilitar su mantenimiento:</p>
+
+            <!-- DIALOG 1 -->
+            <div class="documentacion__items">
+                <div>
+                    <button class="dialog__btn dialog__btn--open" onclick="this.nextElementSibling.showModal()">Carpetas</button>
+                    <dialog>
+                        <h3>Distribución por carpetas.</h3>
+                        <p>Esta es la distribución por carpetas:</p>
+                        <ul>
+                            <li><strong>CSS:</strong> Aquí se encuentran los archivos .css</li>
+                            <li><strong>IMG:</strong> Aquí se encuentran las imágenes que se incluyen en la web</li>
+                            <li><strong>JS:</strong> Aquí se encuentran los archivos .js (de momento no se está utilizando JavaScript)</li>
+                            <li><strong>Archivos .html</strong></li>
+                        </ul>
+                        <button class="dialog__btn dialog__btn--close" onclick="this.parentElement.close()">Cerrar</button>
+                    </dialog>
+                </div>
+                <!-- DIALOG 2 -->
+                <div>
+                    <button class="dialog__btn dialog__btn--open" onclick="this.nextElementSibling.showModal()">Estilos</button>
+                    <dialog>
+                        <h3>Estilos de la Web.</h3>
+                        <p>Todo el diseño se gestiona desde main.css, reutilizando
+                        tipografías, colores y márgenes en todas las páginas.</p>
+                        <button class="dialog__btn dialog__btn--close" onclick="this.parentElement.close()">Cerrar</button>
+                    </dialog>
+                </div>
+                <!-- DIALOG 3 -->
+                <div>
+                    <button class="dialog__btn dialog__btn--open" onclick="this.nextElementSibling.showModal()">Distribución</button>
+                    <dialog>
+                        <h3>Distribución de los bloques de contenido.</h3>
+                        <p>Se emplea <em>Flexbox</em> para las galerías y los bloques de
+                        contenido.</p>
+                        <button class="dialog__btn dialog__btn--close" onclick="this.parentElement.close()">Cerrar</button>
+                    </dialog>
+                </div>
+                <!-- DIALOG 4 -->
+                <div>
+                    <button class="dialog__btn dialog__btn--open" onclick="this.nextElementSibling.showModal()">Responsive</button>
+                    <dialog>
+                        <h3>Diseño Responsive.</h3>
+                        <p>El diseño de la web está adaptado para dispositivos móviles mediante el uso de @media (max-width: 500px)</p>
+                        <button class="dialog__btn dialog__btn--close" onclick="this.parentElement.close()">Cerrar</button>
+                    </dialog>
+                </div>
+            </div>
+           
+        </section>
+
+        <section>
+            <h2>Repositorio</h2>
+            <p>El proyecto se encuentra disponible en GitHub para su consulta y seguimiento:</p>
+            <a href="https://github.com/luberrima/DW-OCtubre-2025" target="_blank" rel="noopener noreferrer">Ver repositorio
+                en
+                GitHub</a>
+        </section>
+
+
+
+
+
+
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li class="footer__item--insta"><a href="#" title="Enlace a Instagram" target="_blank"
+                        rel="noopener noreferrer">Instagram</a></li>
+                <li class="footer__item--linkedin"><a href="#" title="Enlace a Linkedin" target="_blank"
+                        rel="noopener noreferrer">Linkedin</a></li>
+                <li class="footer__item--email"><a href="#" title="Enlace al Email" target="_blank"
+                        rel="noopener noreferrer">Email</a></li>
+                <li class="footer__item--tlf"><a href="#" title="Enlace al Teléfono" target="_blank"
+                        rel="noopener noreferrer">Teléfono</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

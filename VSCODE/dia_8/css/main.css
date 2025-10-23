@@ -1,0 +1,434 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk";
+}
+
+/* ELEMENTOS QUE SE REPITEN */
+a {
+    color: #13100d;
+    text-decoration: none;
+}
+
+.nav__item--active {
+    font-style: italic;
+}
+
+nav a:hover {
+    font-style: italic;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* HEADER Y FOOTER */
+header {
+    height: 100px;
+    background-color: #ff00ce;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 1rem;
+}
+
+header img {
+    height: 30px;
+}
+
+footer {
+    height: 75px;
+    background-color: #ff00ce;
+    color: #13100d;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+li {
+    padding: 0 10px;
+}
+
+.footer__item--insta {
+    text-transform: uppercase;
+}
+
+.footer__item--linkedin {
+    font-weight: bold;
+}
+
+.footer__item--email {
+    font-style: oblique;
+}
+
+.footer__item--tlf {
+    font-size: 20px;
+}
+
+/* MAIN */
+main {
+    min-height: calc(100vh - 175px);
+    padding: 50px;
+    background-color: #13100d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+main>section {
+    max-width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.galeria {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 2rem;
+
+}
+
+.galeria-inicio__item {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ff00ce;
+    background-size: cover;
+    background-position: center;
+}
+
+.galeria-about__item {
+    width: 200px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.galeria-inicio div:first-child {
+    background-image: url(../img/galeria1.webp);
+}
+
+.galeria-inicio div:nth-child(2) {
+    background-image: url(../img/galeria2.png);
+}
+
+.galeria-inicio div:nth-child(3) {
+    background-image: url(../img/galeria3.jpg);
+}
+
+.galeria-inicio div:nth-child(4) {
+    background-image: url(../img/galeria4.jpg);
+}
+
+.galeria-inicio div:nth-child(5) {
+    background-image: url(../img/galeria5.jpg);
+}
+
+.galeria-about div:first-child {
+    background-image: url(../img/inspiracion1.jpeg);
+}
+
+.galeria-about div:nth-child(2) {
+    background-image: url(../img/inspiracion2.jpeg);
+}
+
+.galeria-about div:nth-child(3) {
+    background-image: url(../img/inspiracion3.jpeg);
+}
+
+.galeria-about div:nth-child(4) {
+    background-image: url(../img/inspiracion4.jpeg);
+}
+
+.galeria-about div:nth-child(5) {
+    background-image: url(../img/inspiracion5.jpeg);
+}
+
+.section__playlist iframe {
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* SOBRE MÍ */
+.section__filosofia iframe {
+    align-self: center;
+    width: 90%;
+    height: 400px;
+    margin: 30px 0;
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+    min-width: 100% !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 20px 0;
+    gap: 0;
+}
+
+.card {
+    width: 250px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.card__info {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 16, 13, 0.5);
+    border: 1px solid rgba(19, 16, 13, 0.5);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.card__title {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.card__text {
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.card__info:hover {
+    background-color: rgba(19, 16, 13, 0.9);
+    border: 1px solid #ff00ce;
+}
+
+.card1 {
+    background-image: url(../img/inspiracion1.jpeg);
+}
+
+.card2 {
+    background-image: url(../img/inspiracion2.jpeg);
+}
+
+.card3 {
+    background-image: url(../img/inspiracion3.jpeg);
+}
+
+.card4 {
+    background-image: url(../img/inspiracion4.jpeg);
+}
+
+.card5 {
+    background-image: url(../img/inspiracion5.jpeg);
+}
+
+/* FORMULARIO */
+form,
+.contact__ubi {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 700px;
+    width: 100%;
+    padding: 50px;
+    color: white;
+    align-self: center;
+    border: 2px solid #ff00ce;
+
+}
+
+form label {
+    font-weight: 500;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ff00ce;
+    background-color: #13100d;
+}
+
+form input:focus,
+form textarea:focus {
+    box-shadow: 0 0 5px #ff00ce;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #ff00ce;
+    color: #13100d;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+form button:hover {
+    background-color: #e600b3;
+    color: white;
+}
+
+.contact__divider {
+    height: 150px;
+    border-left: 2px dotted #ff00ce;
+    align-self: center;
+    margin: 50px;
+}
+
+.contact__ubi iframe {
+    width: 90%;
+    height: 500px;
+    align-self: center;
+    margin: 50px 0 0 0;
+    scale: (1.5);
+}
+
+/* PRESENTACIÓN */
+.dialog__btn {
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 5px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.dialog__btn--open {
+    border: 2px solid #ff00ce;
+    background-color: white;
+    color: #ff00ce;
+}
+
+.dialog__btn--open:hover {
+    color: white;
+    background-color: #ff00ce;
+    cursor: pointer;
+}
+
+.dialog__btn--close {
+    border: 2px solid #13100d;
+    background-color: white;
+    color: #13100d;
+}
+
+.dialog__btn--close:hover {
+    color: white;
+    background-color: #13100d;
+    cursor: pointer;
+}
+
+.documentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.documentacion__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 10px 0;
+}
+
+dialog[open] {
+    margin: auto;
+    padding: 50px 100px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 500px) {
+    main {
+        background-color: white;
+        color: #13100d;
+        min-height: calc(100vh - 290px);
+    }
+
+    p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    header {
+        height: 170px;
+        padding: 15px;
+        gap: 0.8rem;
+    }
+
+
+    ul {
+        flex-direction: column !important;
+    }
+
+    .galeria-about__item,
+    .galeria-inicio__item {
+        width: 150px;
+        height: 150px;
+    }
+
+    .section__filosofia iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    footer {
+        height: 120px;
+    }
+
+    form,
+    .contact__ubi {
+        color: #13100d;
+        padding: 20px;
+    }
+
+    .contact__ubi iframe {
+        width: 100%;
+        margin: 10px 0 0 0;
+        height: 300px;
+    }
+
+    form input,
+    form textarea {
+
+        background-color: white;
+    }
+}
