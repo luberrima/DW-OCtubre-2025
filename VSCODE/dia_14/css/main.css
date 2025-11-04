@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk";
+}
+
+body {
+    padding: 20px;
+}
+
+header {
+    border: 2px solid black;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: fuchsia;
+}
+
+nav ul a:hover {
+    font-style: italic;
+}
+
+/* NIVEL 1 */
+.ancla {
+    font-weight: bold;
+    color: fuchsia;
+    font-size: 1.5em;
+}
+
+/* NIVEL 2 */
+.text-wrap {
+    text-align: justify;
+    text-wrap: stable;
+    hyphens: auto;
+}
