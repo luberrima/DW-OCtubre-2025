@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk";
+}
+
+body {
+    padding: 20px;
+}
+
+header {
+    border: 2px solid black;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: fuchsia;
+}
+
+nav ul a:hover {
+    font-style: italic;
+}
+
+/* IMÁGENES */
+.imagenes {
+    margin: 50px;
+}
+
+.imagenes--title {
+    text-align: center;
+}
+
+.imagenes--content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin: 40px 10px 20px 10px;
+}
+
+.imagenes--content a {
+    width: 20%;
+}
+
+.imagenes--content a img {
+    width: 100%;
+}
