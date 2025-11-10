@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk";
+}
+
+body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.level {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    width: 70%;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 20px 0 0 0;
+    display: grid;
+    color: white;
+    gap: 1em;
+}
+
+.box {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* ejemplo 1 */
+.ejemplo-1 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.a {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+
+.b {
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+}
+
+.c {
+    grid-column: 2 / 3;
+    grid-row: 2/3;
+}
+
+.d {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.e {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+/* ejemplo 2 */
+.ejemplo-2 {
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-flow: column;
+}
+
+.ejemplo-2>div:nth-child(even) {
+    background-color: fuchsia;
+    color: black;
+}
+
+/* ejemplo 3 */
+.ejemplo-3 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.box2 {
+    background-color: fuchsia;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.i {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* SOLO SE PUEDE USAR SUBGRID SI EL GRID HIJO OCUPA VARIAS CELDAS DEL PADRE, SI NO, NO LO PILLA*/
+    gap: 0.5em;
+}
+
+.j {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.k {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.l {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+/* ejemplo 4 */
+.ejemplo-4 {
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+}
+
+.m {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.n {
+    grid-column: 4 /5;
+    grid-row: 1/2;
+}
+
+.o {
+    grid-column: 1 / 2;
+    grid-row: 2/3;
+}
+
+.p {
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: subgrid;
+    gap: 0.5em;
+}
+
+.q {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.r {
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+}
+
+.s {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+
+/* ejemplo 5--1*/
+.ejemplo-5--1 {
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+}
+
+.q--1 {
+    grid-column: 1 / 2;
+}
+
+/* ejemplo 5--2*/
+.ejemplo-5--2 {
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+}
+
+.p--2 {
+    gap: 0 0.5em;
+}
+
+.q--2 {
+    grid-column: 1 / 2;
+}
+
+/* ejemplo 5--3 */
+.ejemplo-5--3 {
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+}
+
+.p--3 {
+    gap: 0.5em 0;
+    grid-template-columns: subgrid;
+
+}
+
+.q--3 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.r--3 {
+    grid-column: 2 /4;
+    grid-row: 1 / 2;
+}
+
+.s--3 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}

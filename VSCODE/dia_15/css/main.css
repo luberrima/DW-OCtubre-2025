@@ -32,16 +32,19 @@ nav ul a:hover {
     font-style: italic;
 }
 
-/* IMÁGENES */
-.imagenes {
+.main {
     margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
 }
 
-.imagenes--title {
+.main--title {
     text-align: center;
 }
 
-.imagenes--content {
+.main--content {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -50,10 +53,19 @@ nav ul a:hover {
     margin: 40px 10px 20px 10px;
 }
 
-.imagenes--content a {
+/* IMÁGENES */
+.main--content a {
     width: 20%;
 }
 
-.imagenes--content a img {
+.main--content a img {
     width: 100%;
+}
+
+/* AUDIO */
+
+/* VIDEO */
+.main--video {
+    width: 80%;
+    margin: 20px;
 }
