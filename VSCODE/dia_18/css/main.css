@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk";
+}
+
+body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.imgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5em;
+}
+
+picture:nth-of-type(1) img {
+    filter: blur(5px);
+}
+
+picture:nth-of-type(2) img {
+    filter: brightness(0.4);
+}
+
+picture:nth-of-type(3) img {
+    filter: contrast(200%);
+}
+
+picture:nth-of-type(4) img {
+    filter: drop-shadow(16px 16px 20px blue);
+}
+
+picture:nth-of-type(5) img {
+    filter: grayscale(50%);
+}
+
+picture:nth-of-type(6) img {
+    filter: hue-rotate(90deg);
+}
+
+picture:nth-of-type(7) img {
+    filter: invert(75%);
+}
+
+picture:nth-of-type(8) img {
+    filter: opacity(25%);
+}
+
+picture:nth-of-type(9) img {
+    filter: saturate(30%);
+}
+
+picture:nth-of-type(10) img {
+    filter: sepia(60%);
+}
+
+div {
+    box-shadow: 5px 5px 10px pink;
+    padding: 50px;
+    border-radius: 30px;
+    background-color: black;
+}
+
+div>h2 {
+    text-shadow: 5px 5px 5px fuchsia;
+    color: white;
+}
