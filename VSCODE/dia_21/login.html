@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Crónicas | Noticias Literarias</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg" href="img/logo/icon.svg" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="header--menu">
+        <li class="logo-nav">
+          <a class="logo" href="./index.html" title="Logo de la web">
+            <img src="./img/logo/logo-primary.svg" alt="Logo de la web" title="Logo de la web" />
+          </a>
+        </li>
+        <li><span>/</span></li>
+        <li class="nav--item">
+          <a href="./index.html" title="inicio" aria-label="Ir a inicio">Inicio</a>
+        </li>
+        <li><span>/</span></li>
+        <li class="nav--item">
+          <a href="" title="blog" aria-label="Ir a blog">Blog</a>
+        </li>
+        <li><span>/</span></li>
+        <li class="nav--item">
+          <a href="" title="contacto" aria-label="Ir a contacto">Contacto</a>
+        </li>
+        <li><span>/</span></li>
+        <li class="nav--item">
+          <a href="#" title="login" aria-label="Ir a login">Login</a>
+        </li>
+        <li><span>/</span></li>
+      </ul>
+    </nav>
+
+    <div class="searchbar">
+      <input type="text" placeholder="Buscar..." name="searchbar" />
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8B1E3F">
+        <path
+          d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+      </svg>
+    </div>
+  </header>
+
+  <main>
+    <section class="main-content">
+
+      <div class="login-wrapper">
+        <h1>Login</h1>
+        <p>Escribe tus datos para iniciar sesión</p>
+        <form action="submit" class="login--form">
+          <label for="username">Nombre de Usuario</label>
+          <input type="text" name="username" id="username" placeholder="Escribe aquí...">
+          <label for="password">Contraseña</label>
+          <input type="password" name="password" id="password" placeholder="Escribe aquí...">
+          <button type="submit">Iniciar Sesión</button>
+        </form>
+
+        <p class="login-links">¿No tienes cuenta? <a href="./signup.html">Regístrate</a></p>
+      </div>
+    </section>
+
+  </main>
+</body>
+
+</html>
