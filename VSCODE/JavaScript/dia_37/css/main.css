@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk";
+}
+
+
+.bg {
+    height: 100vh;
+    max-width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-1 {
+    background-image: url("../img/descarga.jpg");
+}
+
+.bg-2 {
+    background-image: url("../img/Light\ Fantasy\ -\ Queens\ &\ Crowns⚜️.jpg");
+}
+
+.content {
+    height: 30vh;
+    background-color: cadetblue;
+    padding: 50px;
+}

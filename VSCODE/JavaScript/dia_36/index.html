@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="img/icon.svg">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <h1>dia 36</h1>
+    <!-- 
+    Nivel 1 – Tabs con HTML, CSS y accesibilidad básica
+    Crea un sistema de pestañas (tabs) con al menos 4 secciones:
+    Usa role="tablist" para el contenedor de las pestañas.
+    Usa role="tab" en cada botón/pestaña.
+    Añade aria-selected="true" a la pestaña activa.
+    Aplica transición suave al cambiar entre pestañas (con CSS).
+    Primera sección:
+    Añade 3 divs con contenido que se voltea en 3D al pasar el ratón por encima, mostrando una imagen detrás. -->
+
+    <header>
+
+        <div class="tabs">
+            <div class="tabs__buttons" role="tablist">
+                <button role="tab" aria-selected="true">
+                    Tab 1
+                </button>
+                <button role="tab" aria-selected="false">
+                    Tab 2
+                </button>
+                <button role="tab" aria-selected="false">
+                    Tab 3
+                </button>
+                <button role="tab" aria-selected="false">
+                    Tab 4
+                </button>
+            </div>
+    </header>
+
+    <main>
+        <div class="tabs__content">
+            <div role="tabpanel" class="contenido visible">
+
+                <div class="cards">
+                    <div class="card">
+                        <div class="card__inner">
+                            <div class="card__front">
+                                <h3>La Guerrera</h3>
+                            </div>
+                            <div class="card__back">
+                                <img src="./img/descarga.jpg" alt="Imagen 1">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card__inner">
+                            <div class="card__front">
+                                <h3>La Sacerdotisa</h3>
+                            </div>
+                            <div class="card__back">
+                                <img src="./img/Light Fantasy - Queens & Crowns⚜️.jpg" alt="Imagen 2">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card__inner">
+                            <div class="card__front">
+                                <h3>La Amante</h3>
+                            </div>
+                            <div class="card__back">
+                                <img src="./img/TikTok_ uponthecrest.jpg" alt="Imagen 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div role="tabpanel" class="contenido">Contenido 2</div>
+            <div role="tabpanel" class="contenido">Contenido 3</div>
+            <div role="tabpanel" class="contenido">Contenido 4</div>
+        </div>
+    </main>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk";
+}
+
+.contenedor {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    min-height: 100px;
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.fade.visible {
+    opacity: 1;
+}
