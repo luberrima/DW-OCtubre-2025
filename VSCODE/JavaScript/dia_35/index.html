@@ -3,30 +3,49 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg" href="img/icon.svg">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <title>Swiper básico</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="js/main.js" defer></script>
 </head>
 
 <body>
 
-    <h1>dia 35</h1>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./img/descarga.jpg" alt="Slide 1">
+            </div>
+            <div class="swiper-slide"><img src="./img/Light Fantasy - Queens & Crowns⚜️.jpg" alt="Slide 2"></div>
+            <div class="swiper-slide"><img src="./img/TikTok_ uponthecrest.jpg" alt="Slide 3"></div>
+        </div>
 
-    <!-- Nivel 1 — Uso de librerías externas y slider 2D básico
-    Implementa un slider/carrousel de terceros
-    Busca una librería como SwiperJS, Glider.js, Splide.js o Slick Carousel.
-    Implementa una galería de imágenes deslizables con controles (prev/next).
-    Personalízalo con tu CSS.
-    Crea tu propio slider 2D con interacción del usuario
-    Usa HTML/CSS/JS puro.
-    Crea una fila horizontal de imágenes dentro de un contenedor con overflow: hidden.
-    Añade botones de "Anterior" y "Siguiente" para mover el contenido horizontalmente con transform: translateX() o scroll. -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+    <h2>Slider vanilla</h2>
+
+    <div class="slider-container">
+        <button class="prev">&#10094;</button>
+    
+        <div class="slider-window">
+            <div class="slider-track">
+                <img src="./img/descarga.jpg" alt="">
+                <img src="./img/Light Fantasy - Queens & Crowns⚜️.jpg" alt="">
+                <img src="./img/TikTok_ uponthecrest.jpg" alt="">
+            </div>
+        </div>
+    
+        <button class="next">&#10095;</button>
+    </div>
+
+
 </body>
 
 </html>

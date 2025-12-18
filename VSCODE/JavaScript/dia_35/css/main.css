@@ -1,3 +1,9 @@
+:root {
+    --main-color: #f9f4ee;
+    --primary-color: #8b1e3f;
+    --secondary-color: #d5afa1;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +12,99 @@
     font-family: "Space Grotesk";
 }
 
-body {
-    padding: 20px;
+
+.swiper {
+    width: 90vw;
+    height: 100vh;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: var(--primary-color);
+    /* color de la flecha */
+    width: 40px;
+    height: 40px;
+    transition:
+            transform 0.3s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+        transform: translateY(-2px);
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--secondary-color);
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--primary-color);
+}
+
+.swiper-scrollbar {
+    background-color: var(--secondary-color);
+}
+
+.swiper-scrollbar-drag {
+    background-color: var(--primary-color);
+}
+
+/*****/
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    gap: 10px;
+    /* espacio entre botones y slider */
+}
+
+/* Ventana visible */
+.slider-window {
+    width: 80vw;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Fila de imágenes */
+.slider-track {
+    display: flex;
+    height: 100%;
+}
+
+/* Imágenes */
+.slider-track img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* Botones externos */
+.slider-container button {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Hover */
+.slider-container button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
